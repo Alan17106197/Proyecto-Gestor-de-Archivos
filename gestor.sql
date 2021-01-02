@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 30-12-2020 a las 09:33:01
+-- Tiempo de generación: 02-01-2021 a las 07:23:40
 -- Versión del servidor: 10.4.14-MariaDB
 -- Versión de PHP: 7.2.33
 
@@ -42,12 +42,11 @@ CREATE TABLE `t_archivos` (
 --
 
 INSERT INTO `t_archivos` (`id_archivo`, `id_usuario`, `id_categoria`, `nombre`, `tipo`, `ruta`, `fecha`) VALUES
-(2, 12, 4, 'Sin título.png', 'png', '../../archivos/12/Sin título.png', '2020-12-29 23:46:18'),
-(3, 11, 3, 'Sin título - copia.png', 'png', '../../archivos/11/Sin título - copia.png', '2020-12-30 00:33:39'),
-(7, 11, 3, 'Calendario_Academico_Ciclo_Escolar_2020-2021.pdf', 'pdf', '../../archivos/11/Calendario_Academico_Ciclo_Escolar_2020-2021.pdf', '2020-12-30 01:25:56'),
-(8, 11, 3, 'Educar en valores corto sobre bullying.mp4', 'mp4', '../../archivos/11/Educar en valores corto sobre bullying.mp4', '2020-12-30 02:26:05'),
-(9, 11, 3, 'Promo.jpg', 'jpg', '../../archivos/11/Promo.jpg', '2020-12-30 02:26:21'),
-(10, 11, 3, 'Dash Berlin feat. Emma Hewitt - Disarm Yourself (Official Music Video).mp3', 'mp3', '../../archivos/11/Dash Berlin feat. Emma Hewitt - Disarm Yourself (Official Music Video).mp3', '2020-12-30 02:26:34');
+(11, 12, 8, 'Calendario_Academico_Ciclo_Escolar_2020-2021.pdf', 'pdf', '../../archivos/12/Calendario_Academico_Ciclo_Escolar_2020-2021.pdf', '2021-01-02 00:17:56'),
+(12, 12, 9, 'Dash Berlin feat. Emma Hewitt - Disarm Yourself (Official Music Video).mp3', 'mp3', '../../archivos/12/Dash Berlin feat. Emma Hewitt - Disarm Yourself (Official Music Video).mp3', '2021-01-02 00:18:06'),
+(13, 12, 10, 'Educar en valores corto sobre bullying.mp4', 'mp4', '../../archivos/12/Educar en valores corto sobre bullying.mp4', '2021-01-02 00:18:16'),
+(14, 12, 11, 'Promo.jpg', 'jpg', '../../archivos/12/Promo.jpg', '2021-01-02 00:18:30'),
+(15, 12, 12, 'Sin título - copia (2).png', 'png', '../../archivos/12/Sin título - copia (2).png', '2021-01-02 00:18:37');
 
 -- --------------------------------------------------------
 
@@ -67,11 +66,11 @@ CREATE TABLE `t_categorias` (
 --
 
 INSERT INTO `t_categorias` (`id_categoria`, `id_usuario`, `nombre`, `fechaInsert`) VALUES
-(3, 11, 'Peliculas20', '2020-12-29 19:11:33'),
-(4, 12, 'ProyectoPrueba1', '2020-12-29 23:45:31'),
-(5, 12, 'ProyectoPrueba2', '2020-12-29 23:45:37'),
-(6, 12, 'ProyectoPrueba3', '2020-12-29 23:45:42'),
-(7, 11, 'Tesis', '2020-12-30 01:08:38');
+(8, 12, 'Prueba1', '2021-01-02 00:16:45'),
+(9, 12, 'Prueba2', '2021-01-02 00:16:50'),
+(10, 12, 'Prueba3', '2021-01-02 00:16:56'),
+(11, 12, 'Prueba4', '2021-01-02 00:17:02'),
+(12, 12, 'Prueba5', '2021-01-02 00:17:16');
 
 -- --------------------------------------------------------
 
@@ -94,9 +93,7 @@ CREATE TABLE `t_usuarios` (
 --
 
 INSERT INTO `t_usuarios` (`id_usuario`, `nombre`, `fechaNacimiento`, `email`, `usuario`, `password`, `insert`) VALUES
-(3, 'Alan', '1998-06-25', 'alandejesus98@hotmail.com', 'usuario1', '7c4a8d09ca3762af61e59520943dc26494f8941b', '2020-12-29 02:16:04'),
-(11, 'Jesus', '2020-12-11', 'alanjesusjesus2015@gmail.com', 'usuario2', '6a62415b43a0268f38f117f076dce135705d7895', '2020-12-29 12:56:06'),
-(12, 'Adrian', '2020-12-09', 'pepe@hotmail.com', '123', '40bd001563085fc35165329ea1ff5c5ecbdbbeef', '2020-12-29 23:44:37');
+(12, 'Alan', '2020-12-09', 'alandejesus98@hotmail.com', 'Alan Rodriguez', '40bd001563085fc35165329ea1ff5c5ecbdbbeef', '2020-12-29 23:44:37');
 
 --
 -- Índices para tablas volcadas
@@ -131,13 +128,13 @@ ALTER TABLE `t_usuarios`
 -- AUTO_INCREMENT de la tabla `t_archivos`
 --
 ALTER TABLE `t_archivos`
-  MODIFY `id_archivo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id_archivo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT de la tabla `t_categorias`
 --
 ALTER TABLE `t_categorias`
-  MODIFY `id_categoria` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id_categoria` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT de la tabla `t_usuarios`

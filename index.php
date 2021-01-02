@@ -17,7 +17,7 @@
 
     <!-- Icon -->
     <div class="fadeIn first">
-      <img src="img/logo.png" width="80" height="100" id="icon" alt="User Icon" />
+      <img src="img/logo.png" width="100" height="100" id="icon" alt="User Icon" />
       <h1>Gestor de Archivos</h1>
     </div>
 

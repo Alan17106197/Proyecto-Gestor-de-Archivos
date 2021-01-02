@@ -26,7 +26,7 @@ function agregarArchivosGestor() {
 
 function eliminarArchivo(idArchivo) {
 			swal({
-		  title: "¿Estas seguro de elimianr este archivo?",
+		  title: "¿Estas seguro de eliminar este archivo?",
 		  text: "Una vez Eliminado no  podra recuperarse",
 		  icon: "warning",
 		  buttons: true,
